@@ -73,11 +73,11 @@ tap_water(temp=False, waterintensity=3)
 print('---------------------')
 
 def tap_water(temperature, water_intensity):
-  if temperature == 'hot' and water_intensity >= 0:
+  if temperature == 'hot' and water_intensity >= 0 and water_intensity <= 5:
     for i in range(water_intensity):
       print("hot water")
       
-  elif temperature == 'cold'and water_intensity >= 0:
+  elif temperature == 'cold'and water_intensity >= 0 and water_intensity <= 5:
     for i in range(water_intensity):
       print("cold water")
 
